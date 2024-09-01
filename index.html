@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Osu! Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Mini Rhythm Game</h1>
+        <div id="score-container">Score: <span id="score">0</span></div>
+        <div id="malus-container">Malus: <span id="malus">0</span></div>
+        <div id="timer-container">Time: <span id="timer">30</span>s</div>
+        <div id="play-area" onclick="increaseMalus(event)"></div>
+        <button id="start-button" onclick="startGame(1)">Start Level 1</button>
+        <button id="start-level2-button" onclick="startGame(2)" disabled>Start Level 2</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

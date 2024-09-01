@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    background-color: #3a3f47;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+h1 {
+    color: #61dafb;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#score-container,
+#timer-container,
+#malus-container {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#play-area {
+    width: 100%;
+    height: 300px;
+    background-color: #1f1f1f;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.target {
+    width: 50px;
+    height: 50px;
+    background-color: #61dafb;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: fadeInOut 2s linear;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#start-button,
+#start-level2-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#start-button:hover,
+#start-level2-button:hover {
+    background-color: #4ec2e2;
+}
